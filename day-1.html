@@ -10,5 +10,27 @@
 <button onclick="message()" >alert</button>
 <button onclick="addingElement()"> adding element </button>
 </body>
+<script>
 
+document.write(`<h1>hello</h1>`);
+
+function message(){
+
+    alert('welcome to js day-1');
+
+}
+
+let  text="element added";
+
+function addingElement(){
+
+
+let body=document.querySelector('body');
+body.innerHTML=`<h1>${text}</h1>`;
+
+
+}
+
+
+</script>
 </html>
