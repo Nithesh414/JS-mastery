@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <title>
+
+        </title>
+        <style>
+        div button{
+            color: black;
+            background-color: tomato;
+            width: 100px;
+            height: 30px;
+            border-radius: 10px;
+        }
+    </style>
+    </head>
+    
+    <body>
+     <div style="display: flex;justify-content: center;align-items: center;height: 900px;gap: 40px;">  
+<button id="product1">
+200
+</button>
+ <button id="product2">
+300
+ </button>
+<button id="product3">
+500
+</button>
+<button id="submit">
+    submit
+</button>
+</div> 
+    </body>
+    <script>
+
+
+let button1=document.getElementById('product1');
+let button2=document.getElementById('product2');
+let button3=document.getElementById('product3');
+let submit=document.getElementById('submit')
+let total_amount=0;
+button1.addEventListener('click',()=>{
+ total_amount+=200;
+ 
+console.log(total_amount);
+})
+
+button2.addEventListener('click',()=>{
+ total_amount+=300;
+ 
+console.log(total_amount);
+})
+
+button3.addEventListener('click',()=>{
+ total_amount+=500;
+ 
+console.log(total_amount);
+})
+
+submit.addEventListener('click',()=>{
+    document.write(`<h1>total amount is ${total_amount}</h1>`);
+})
+
+    </script>
+</html>
