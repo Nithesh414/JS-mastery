@@ -306,3 +306,156 @@ Output:
     DOM Manipulation
 
 ⭐ Goal: **Build strong JavaScript fundamentals by practicing daily.**
+
+
+📅 Day 3 — Conditional Logic, Debugging & Mini Project
+📌 Overview
+
+Today’s learning focused on decision making in JavaScript, understanding how programs choose different actions based on conditions, and improving skills by debugging code and building a mini project.
+
+1️⃣ Conditional Logic in JavaScript
+
+Conditional statements allow programs to execute different code depending on conditions.
+
+Basic Syntax
+let age = 18
+
+if(age >= 18){
+console.log("Eligible to vote")
+}
+else{
+console.log("Not eligible")
+}
+Types of Conditional Statements
+if
+
+Runs code only when condition is true.
+
+if(score > 50){
+console.log("Pass")
+}
+if...else
+
+Chooses between two possible outcomes.
+
+let number = 10
+
+if(number % 2 === 0){
+console.log("Even")
+}
+else{
+console.log("Odd")
+}
+if...else if...else
+
+Used when multiple conditions exist.
+
+let marks = 85
+
+if(marks >= 90){
+console.log("Grade A")
+}
+else if(marks >= 70){
+console.log("Grade B")
+}
+else{
+console.log("Grade C")
+}
+2️⃣ Debugging JavaScript Code
+
+Debugging means finding and fixing errors in code.
+
+Common JavaScript Errors
+1. Syntax Error
+
+Occurs when JavaScript syntax is incorrect.
+
+Example:
+
+if(true
+console.log("Hello")
+
+Problem → Missing closing parenthesis.
+
+2. Reference Error
+
+Occurs when a variable is not defined.
+
+console.log(age)
+
+If age was never declared, JavaScript throws an error.
+
+3. Logical Error
+
+The program runs but produces wrong output.
+
+Example:
+
+let price = 100
+let quantity = 2
+
+let total = price + quantity
+
+Correct calculation should be:
+
+let total = price * quantity
+Useful Debugging Method
+
+Using console.log() to inspect values.
+
+let a = 10
+let b = 20
+
+console.log(a)
+console.log(b)
+
+This helps track where the issue occurs.
+
+3️⃣ Mini Project — Password Validation
+
+A simple project to validate password length in real time.
+
+Features
+
+User enters password
+
+System checks password length
+
+Displays validation message
+
+Example Logic
+function validate(){
+
+if(password.value.length < 5){
+message.innerText = "Password must be at least 5 characters"
+}
+else{
+message.innerText = "Password is valid"
+}
+
+}
+Concepts Used
+
+This project combines multiple JavaScript concepts:
+
+Variables
+
+DOM selection
+
+Event handling (oninput)
+
+Conditional logic
+
+Real-time validation
+
+🎯 Learning Outcome
+
+After completing Day 3, the following skills were practiced:
+
+Writing conditional statements
+
+Understanding program decision flow
+
+Identifying and fixing coding errors
+
+Building a small interactive JavaScript project
