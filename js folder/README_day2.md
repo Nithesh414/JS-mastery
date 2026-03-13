@@ -308,16 +308,16 @@ Output:
 ⭐ Goal: **Build strong JavaScript fundamentals by practicing daily.**
 
 
-📅 Day 3 — Conditional Logic, Debugging & Mini Project
+## 📅 Day 3 — Conditional Logic, Debugging & Mini Project
 📌 Overview
 
 Today’s learning focused on decision making in JavaScript, understanding how programs choose different actions based on conditions, and improving skills by debugging code and building a mini project.
 
-1️⃣ Conditional Logic in JavaScript
+# 1️⃣ Conditional Logic in JavaScript
 
 Conditional statements allow programs to execute different code depending on conditions.
 
-Basic Syntax
+```Basic Syntax
 let age = 18
 
 if(age >= 18){
@@ -361,7 +361,8 @@ console.log("Grade B")
 else{
 console.log("Grade C")
 }
-2️⃣ Debugging JavaScript Code
+```
+# 2️⃣ Debugging JavaScript Code
 
 Debugging means finding and fixing errors in code.
 
@@ -371,7 +372,7 @@ Common JavaScript Errors
 Occurs when JavaScript syntax is incorrect.
 
 Example:
-
+```
 if(true
 console.log("Hello")
 
@@ -382,15 +383,15 @@ Problem → Missing closing parenthesis.
 Occurs when a variable is not defined.
 
 console.log(age)
-
+```
 If age was never declared, JavaScript throws an error.
 
-3. Logical Error
+# 3. Logical Error
 
 The program runs but produces wrong output.
 
 Example:
-
+```
 let price = 100
 let quantity = 2
 
@@ -408,10 +409,10 @@ let b = 20
 
 console.log(a)
 console.log(b)
-
+```
 This helps track where the issue occurs.
 
-3️⃣ Mini Project — Password Validation
+# 3️⃣ Mini Project — Password Validation
 
 A simple project to validate password length in real time.
 
