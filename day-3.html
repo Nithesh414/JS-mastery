@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>
+        password validation
+        </title>
+    </head>
+<body style="display: flex;justify-content: center;align-items: center;height:80vh">
+    <form style="border-radius: 20px;  width: 400px;height:400px;border:1px solid black;margin: 0 auto;display: flex;flex-direction: column;align-items: center;justify-content: center;gap:30px">
+<input style="width: auto;height: auto;border: 2px solid black;border-radius: 20px;" type="text" placeholder="enter the name">
+<input style="width: auto;height: auto;border: 2px solid black;border-radius: 20px;" type="password" oninput="validate()" placeholder="enter the password">
+<p style="text-size-adjust: bold;"></p>
+</form>
+</body>
+<script>
+    let name=document.querySelector("input[text]");
+    let password=document.querySelector("input[type='password']");
+let form=document.querySelector("form");
+let h1=document.querySelector("p");
+function validate(){
+    if(password.value.length<5){
+
+h1.innerText="password must be at least 5 characters long";    
+}
+    else{
+h1.innerText="password is valid"; 
+    }
+}
+
+</script>
+
+</html>
