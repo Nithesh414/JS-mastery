@@ -460,3 +460,191 @@ Understanding program decision flow
 Identifying and fixing coding errors
 
 Building a small interactive JavaScript project
+-------------------------------------------------------
+## 📅 Day 4 — JavaScript Functions & Calculator Project
+# 📌 Overview
+-------------------------------------------------
+Today’s learning focused on JavaScript Functions, which are reusable blocks of code used to perform specific tasks.
+Functions help make programs organized, reusable, and easier to maintain.
+
+🧠 Topics Covered
+# 1️⃣ What is a Function
+
+A function is a block of code designed to perform a specific task.
+
+Instead of repeating code many times, we create a function and call it whenever needed.
+
+```Example:
+
+function greet(){
+console.log("Hello JavaScript")
+}
+
+greet()
+```
+Output:
+
+Hello JavaScript
+# 2️⃣ Function Parameters
+
+Functions can receive values called parameters.
+
+```Example:
+
+function greet(name){
+console.log("Hello " + name)
+}
+
+greet("Nithesh")
+```
+Output:
+
+Hello Nithesh
+
+Parameters allow functions to work with different inputs.
+
+# 3️⃣ Function with Multiple Parameters
+
+Functions can accept multiple values.
+
+```Example:
+
+function add(a, b){
+console.log(a + b)
+}
+
+add(5,3)
+```
+Output:
+
+8
+# 4️⃣ Return Statement
+
+The return statement sends a value back from the function.
+
+```Example:
+
+function multiply(a, b){
+return a * b
+}
+
+let result = multiply(4,5)
+
+console.log(result)
+```
+Output:
+
+20
+# 5️⃣ Function Expression
+
+Functions can also be stored inside variables.
+
+```Example:
+
+let greet = function(){
+console.log("Hello")
+}
+```
+greet()
+# 6️⃣ Arrow Functions
+
+Arrow functions are a modern and shorter syntax for writing functions.
+
+```Example:
+
+const add = (a,b) => {
+return a + b
+}
+```
+Short version:
+```
+const add = (a,b) => a + b
+```
+# 7️⃣ Function Scope
+
+Variables declared inside a function are local to that function.
+
+```Example:
+
+function test(){
+let a = 10
+}
+
+console.log(a)
+```
+Output:
+
+ReferenceError
+
+Because the variable exists only inside the function.
+
+## 💻 Mini Project — Simple Calculator
+
+A simple calculator was built using JavaScript functions.
+
+Features
+
+User enters two numbers
+
+User selects an operation
+
+Result is displayed instantly
+
+Operations Implemented
+Addition
+Subtraction
+Multiplication
+Division
+```Example Logic
+function calculate(a,b,operation){
+
+if(operation === "+"){
+return a + b
+}
+
+if(operation === "-"){
+return a - b
+}
+
+if(operation === "*"){
+return a * b
+}
+
+if(operation === "/"){
+return a / b
+}
+
+}
+
+```
+## 🎯 Skills Practiced
+
+During this session the following JavaScript skills were practiced:
+
+Creating functions
+
+Passing parameters
+
+Returning values
+
+Function expressions
+
+Arrow functions
+
+Function scope
+
+DOM manipulation
+
+Event handling
+
+🚀 Learning Outcome
+
+By completing Day 4, the following concepts are now understood:
+
+Writing reusable functions
+
+Using functions to organize code
+
+Handling user input
+
+Performing operations dynamically
