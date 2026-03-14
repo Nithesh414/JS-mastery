@@ -1,0 +1,69 @@
+<head>
+    <title>
+        functions
+        </title>
+</head>
+<body>
+
+<!-- button and display function -->   
+<h1 ></h1>
+<button onclick="display()">show text</button>
+
+<!-- password validation -->
+
+<input  type="checkbox" id="textt" onclick="hide()">
+
+<label for="textt">show text > </label>
+<p >The simple, yet profound, act of walking in nature offers a profound escape from the hustle of modern life, acting as a natural remedy for stress, a catalyst for creativity, and a means to reconnect with oneself, all while providing gentle, sustainable physical exercise that strengthens the heart and clears the mind. When you step onto a dirt path, away from the paved roads, the immediate sensation is one of profound tranquility. The city sounds—the screeching tires, the sirens, the constant hum of machinery—fade into the background, replaced by the calming symphony of rustling leaves, bird songs, and the soft crunch of twigs underfoot. This environment forces a shift in focus, grounding you in the present moment. Nature does not demand that you be anywhere else or do anything differently; it simply exists in a state of quiet, orderly beauty.
+Walking, in general, is recognized as a fantastic form of cardiovascular exercise, but walking in nature provides added benefits for mental health. Scientific studies have shown that spending time in green spaces reduces levels of cortisol, the body’s primary stress hormone. Unlike the treadmill, where you stare at the same screen or wall, a natural environment provides a changing, dynamic landscape. This subtle visual stimulation allows your brain to relax, moving away from focused attention, which is often exhausting, to effortless attention. As you walk through a forest or along a quiet riverbank, you may find that your mind starts to wander, untangling complex problems that seemed insurmountable in the office. This state of "soft fascination" allows for the rejuvenation of mental energy. 
+EduBirdie
+EduBirdie
+Furthermore, walking outdoors fosters a deeper connection with the environment. It teaches patience and observation. One day you might notice the tiny, vibrant green buds on a willow tree, and the next, you may see those same branches heavy with leaves. The seasons change, and walking through them, you feel part of that rhythm. You become attuned to the subtle shifts in the air—the scent of pine, the crispness of autumn, the dampness of a coming rainstorm. This engagement with the senses reduces the feeling of being overwhelmed by technological distractions and the constant influx of information.
+The physical benefits are, of course, significant. Walking strengthens your legs, hips, and core, and is low-impact, making it accessible for people of all fitness levels. Unlike running, which can be hard on the joints, a long, leisurely walk provides endurance training without the damage. Your blood circulation improves, your lungs take in fresher air, and your immune system can even get a boost from the phytoncides released by trees. It is a holistic experience that works the body and mind simultaneously.
+In addition to physical and mental health, walking in nature can inspire creativity and improve your mood. Many thinkers and artists have relied on walking to break through creative blocks. When you are moving through a natural landscape, you are stimulating your senses, which often leads to fresh ideas and new perspectives. The simple, rhythmic action of walking can act as a form of meditation in motion. As you focus on the path ahead, the worries of the day lose their power. You are left with a feeling of deep peace, a renewed sense of energy, and a clearer understanding of your place in the world. It is, ultimately, a simple, free, and incredibly effective way to live a healthier and more balanced life.
+500 Word Essay Examples and Topics by Edubirdie.com
+When writing a 500-word essay, it is essential to be concise and clear in your arguments. Due to the limited word count, every sen...
+
+EduBirdie
+</p>
+
+
+</body>
+<script>
+
+// function display()
+let text=document.querySelector("h1");
+let button=document.querySelector("button");
+function display(){
+if(text.innerText=="hello world"){
+text.innerText="";
+button.innerText="hide text";
+}
+else{
+text.innerText="hello world";
+button.innerText="show text";
+}
+}
+
+
+// function hide()
+
+
+function hide(){
+
+let checkbox=document.querySelector("input[type='checkbox']");
+let p=document.querySelector("p");
+
+if(checkbox.checked){
+    p.style.display="none";
+}
+else if(!checkbox.checked){
+    p.style.display="block";
+    console.log("hello");
+}
+
+}
+
+</script>
+</html>
+
