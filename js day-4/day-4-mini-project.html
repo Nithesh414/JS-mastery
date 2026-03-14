@@ -1,0 +1,116 @@
+<html>
+    <head>
+        <title>
+            calculator
+        </title>
+        <style>
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+border: 2px solid white;
+    display: flex;
+    width:350px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+text-align: center;
+gap: 20px;
+position: relative;
+border-radius: 20px;
+box-shadow: 3px 3px 15px aquamarine;
+}
+
+.container input{
+
+    width: 280px;
+    height: 40px;
+    border-radius: 20px;
+    margin-right: 30px;
+    margin-left: 30px;
+    box-shadow: 2px 2px 10px aquamarine;
+    text-indent: 30px;
+}
+::-webkit-inner-spin-button{
+    display: none;
+}
+.container h1{
+    padding-left: 20px;
+    
+}
+.container button{
+    width: 35px;
+    height: 35px;
+    box-shadow: 2px 2px 10px aquamarine;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.container p{
+    position: absolute;
+    top:70px;
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+        <h1 style="color: aqua;">calculator</h1>
+        <p style="color: aliceblue;">result</p>
+<input type="number" id="num1" placeholder="enter the first number">
+<input type="number" id="num2" placeholder="enter the second number">
+<button onclick="add()">+</button>
+<button onclick="sub()">-</button>
+<button onclick="mul()">*</button>
+<button onclick="div()">/</button>
+</div>
+    </body>
+    <script>
+let num1=document.querySelector("#num1");
+let num2=document.querySelector("#num2");
+let result=document.querySelector("p");
+function add(){
+
+    let a=Number(num1.value);
+    let b=Number(num2.value);
+let resultt = a+b;
+console.log(result);
+result.innerText=`result is ${resultt}`;
+}
+
+function div(){
+
+    let a=Number(num1.value);
+    let b=Number(num2.value);
+let resultt = a/b;
+console.log(result);
+result.innerText=`result is ${resultt}`;
+}
+
+function sub(){
+
+    let a=Number(num1.value);
+    let b=Number(num2.value);
+let resultt = a-b;
+console.log(result);
+result.innerText=`result is ${resultt}`;
+}
+
+function mul(){
+
+    let a=Number(num1.value);
+    let b=Number(num2.value);
+let resultt = a*b;
+console.log(result);
+result.innerText=`result is ${resultt}`;
+}
+
+
+
+    </script>
+</html>
