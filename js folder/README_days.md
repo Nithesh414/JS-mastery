@@ -648,3 +648,143 @@ Using functions to organize code
 Handling user input
 
 Performing operations dynamically
+
+
+## 📅 Day 5 — JavaScript Arrays
+## 📌 Overview
+
+Today’s learning focused on JavaScript Arrays, which allow us to store multiple values in a single variable.
+Arrays are widely used when working with lists of data such as numbers, products, users, or tasks.
+
+🧠 Topics Covered
+# 1️⃣ Introduction to Arrays
+
+An array is a data structure used to store multiple values in a single variable.
+
+```Example:
+
+let fruits = ["apple", "banana", "mango"]
+```
+Here the array contains three elements.
+
+# 2️⃣ Accessing Array Elements
+
+Array elements are accessed using index numbers.
+
+```Example:
+
+let fruits = ["apple", "banana", "mango"]
+
+console.log(fruits[0])
+console.log(fruits[1])
+```
+```Output
+
+apple
+banana
+```
+⚠️ Important rule:
+
+Array index starts from 0
+# 3️⃣ Updating Array Elements
+
+We can modify elements using their index.
+
+```Example:
+
+let numbers = [10,20,30]
+
+numbers[1] = 50
+
+console.log(numbers)
+```
+```Output
+
+[10,50,30]
+```
+# 4️⃣ Array Methods
+
+JavaScript provides built-in methods to work with arrays.
+
+push()
+
+Adds an element to the end of the array.
+
+```Example:
+
+let numbers = [1,2,3]
+
+numbers.push(4)
+
+console.log(numbers)
+```
+```Output
+
+[1,2,3,4]
+```
+pop()
+Removes the last element.
+
+numbers.pop()
+shift()
+
+Removes the first element.
+
+numbers.shift()
+unshift()
+
+Adds an element to the beginning.
+
+numbers.unshift(10)
+# 5️⃣ Array Length
+
+The length property returns the number of elements in an array.
+
+```Example:
+
+let numbers = [10,20,30]
+
+console.log(numbers.length)
+```
+```Output
+
+3
+```
+# 6️⃣ Looping Through Arrays
+
+Arrays are commonly used with loops.
+
+```Example:
+
+let numbers = [10,20,30]
+
+for(let i = 0; i < numbers.length; i++){
+console.log(numbers[i])
+}
+```
+```Output
+
+10
+20
+30
+```
+# 7️⃣ Removing a Specific Element
+
+To remove a specific value, we can use indexOf() and splice().
+
+```Example:
+
+let fruits = ["apple","banana","mango"]
+
+let index = fruits.indexOf("banana")
+
+if(index !== -1){
+fruits.splice(index,1)
+}
+
+console.log(fruits)
+```
+```Output
+
+["apple","mango"]
+```
