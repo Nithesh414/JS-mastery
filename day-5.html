@@ -1,0 +1,101 @@
+<html>
+
+<head>
+    <title>
+        todo list
+    </title>
+    <style>
+.contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 70px;
+    position: relative;
+}
+
+.contain div{
+    width: 200px;
+    height: 200px;
+    background-color: lightcoral;
+    border-radius: 30px;
+    text-align: center;
+    align-content: center;
+
+}
+input{
+    display: none;
+}
+
+    </style>
+</head>
+<body>
+<div class="contain">
+    <div onclick="add(`{id:0,task:task1}`)">
+        
+        <label for="task1">
+            <h1 class="text" >task1</h1>
+        </label>
+        <button onclick="remove(`{id:0,task:task1}`)">remove</button>
+     </div>
+
+    <div onclick="add(`{id:1,task:task2}`)">
+        
+        <label for="task2">
+            <h1 class="text" >task2</h1>
+        </label>
+        <button onclick="remove(`{id:1,task:task2}`)">remove</button>
+    </div>
+  
+   <div onclick="add(`{id:2,task:task3}`)">
+    <input type="checkbox" id="task3">
+        <label for="task3">
+
+        <h1 class="text" >task3</h1>
+         </label>
+        <button onclick="remove(`{id:2,task:task3}`)">remove</button>
+
+    </div>
+
+    <table style="position: absolute;bottom: 300px; width: 300px;"  border="1">
+    <thead>
+        <tr>
+            <th>id</th>
+            <th>task</th>
+    </thead>
+    <tbody id="table-body">
+    </tbody>
+</div>
+
+</table>
+</body>
+<script>
+let tasks = [];
+let tableBody = document.getElementById('table-body');
+function add({id,task}){
+    tasks.push({iditem:id,taskitem:task});
+    console.log(tasks);
+    alert(`task added: ${task}`);
+    console.log(id,task);
+   tableBody.innerHTML += `<tr><td>${id}</td><td>${task}</td></tr>`;
+
+}
+function remove(task){
+  let tak=tasks.indexOf(task)
+    if(tak>-1){
+        tasks.splice(tak,1);
+        console.log(tasks);
+        alert(`task removed: ${task}`);
+        tableBody.innerHTML = '';
+        tasks.forEach(t => {
+            tableBody.innerHTML += `<tr><td>${t.id}</td><td>${t.task}</td></tr>`;
+        });
+}}
+
+
+
+
+
+</script>
+
+</html>
