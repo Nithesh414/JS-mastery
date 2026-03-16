@@ -1,2 +1,40 @@
 <html>
+
+<head>
+<title>Student Viewer</title>
+</head>
+
+<body style="text-align:center;margin-top:100px;font-family:Arial">
+
+<h1>Student Profile</h1>
+
+<button onclick="showStudent()">Show Details</button>
+
+<div id="result"></div>
+
+<script>
+
+let student = {
+name: "Nithesh",
+age: 20,
+course: "Computer Science",
+marks: 92
+}
+
+function showStudent(){
+
+let output = `
+<p>Name: ${student.name}</p>
+<p>Age: ${student.age}</p>
+<p>Course: ${student.course}</p>
+<p>Marks: ${student.marks}</p>
+`
+
+document.getElementById("result").innerHTML = output
+
+}
+
+</script>
+
+</body>
 </html>
