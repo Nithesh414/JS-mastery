@@ -1,0 +1,9 @@
+let input=[1,2,3,4,5,6,7]
+let count=0
+for(let i=0;i<input.length;i++){
+   if(input[i]%2==0){
+       count++
+   }
+}
+console.log(count)
+console.log(input.length-count)
