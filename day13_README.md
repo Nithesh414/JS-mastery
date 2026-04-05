@@ -68,18 +68,6 @@ console.log(result)
 - Prefer loop in most real-world problems unless recursion is required
 
 ---
-
-## 🚀 Interview Tip
-
-If interviewer asks:
-
-**"Which is better?"**
-
-👉 Answer:
-> Loop is better because it uses constant space, while recursion uses additional memory due to the call stack.
-
----
-
 ## 🎯 Summary
 
 - Loop → Efficient & practical  
