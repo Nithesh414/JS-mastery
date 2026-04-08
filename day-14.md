@@ -1,4 +1,4 @@
-# Day 13 - Leader Elements in an Array
+# Day 14 - Leader Elements in an Array
 
 ## Problem Statement
 Given an array, find all **leader elements**.
