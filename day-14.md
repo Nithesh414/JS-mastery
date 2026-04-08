@@ -176,14 +176,6 @@ Since leaders were collected from right to left, reverse the array:
 
 ---
 
-## Comparison Table
-
-| Approach | Method | Time Complexity | Space Complexity |
-|----------|--------|-----------------|------------------|
-| Brute Force | Compare each element with all right-side elements | O(n²) | O(n) |
-| Optimized | Traverse from right and track maximum | O(n) | O(n) |
-
----
 
 ## Conclusion
 - The **brute force approach** is easy to understand, but slower for large arrays
