@@ -17,3 +17,19 @@ for(let i=0;i<arr.length;i++){
 }
 
 console.log(sum)
+
+
+/*problem 2 in array*/
+function isSorted(arr, i) {
+    // base case
+    if (i === arr.length - 1) return true;
+
+    // check condition
+    if (arr[i] > arr[i + 1]) return false;
+
+    // recursive call
+    return isSorted(arr, i + 1);
+}
+
+let arr = [1, 2, 5, 4];
+console.log(isSorted(arr, 0));
