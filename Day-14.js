@@ -19,7 +19,7 @@ for(let i=0;i<arr.length;i++){
 console.log(sum)
 
 
-/*problem 2 in array*/
+
 function isSorted(arr, i) {
     // base case
     if (i === arr.length - 1) return true;
