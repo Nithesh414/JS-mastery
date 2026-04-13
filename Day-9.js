@@ -5,5 +5,5 @@ for(let i=0;i<input.length;i++){
        count++
    }
 }
-
+console.log(count)
 console.log(input.length-count)
