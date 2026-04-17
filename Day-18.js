@@ -6,3 +6,6 @@ if(input[i] == " "){
   count++}
 }
 
+/* finding the words in the given str*/
+/*
+time complexity=O(n)*/
