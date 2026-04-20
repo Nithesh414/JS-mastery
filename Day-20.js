@@ -6,3 +6,16 @@ for(let i=0;i<input.length-1;i++){
 }
 
 /* finding the missing number in the sequence */
+
+
+let input = [1,2,3,4];
+
+let sum = input.reduce((a,b)=>a+b,0);
+let target = sum / 2;
+
+let out = [];
+
+for(let i = 0; i < input.length; i++){
+    for(let j = i + 1; j < input.length; j++){
+        if(input[i] + input[j] === target){
+            out
