@@ -18,4 +18,7 @@ let out = [];
 for(let i = 0; i < input.length; i++){
     for(let j = i + 1; j < input.length; j++){
         if(input[i] + input[j] === target){
-            out.push(input[i],input[j])}}}
+            out.push(input[i],input[j])
+        }
+    }
+}
