@@ -6,7 +6,7 @@ for(let i=0;i<input.length-1;i++){
 }
 
 /* finding the missing number in the sequence */
-
+/*finding the subset array the sum of element is equals to target*/
 
 let input = [1,2,3,4];
 
