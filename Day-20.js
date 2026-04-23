@@ -23,7 +23,7 @@ for(let i = 0; i < input.length; i++){
     }
 }
 
-
+/* leet code question no : 136 */
 var singleNumber = function(nums) {
     for(let i = 0; i < nums.length; i++){
         let count = 0;
