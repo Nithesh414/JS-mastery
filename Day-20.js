@@ -40,6 +40,9 @@ var singleNumber = function(nums) {
     }
 };
 
+/*finding the least value element*/
+
+
 let input=[15,13,12,17,11]
 let min=0;
 for(let i=0;i<input.length;i++){
