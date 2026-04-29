@@ -45,4 +45,9 @@ var singleNumber = function(nums) {
 
 let input=[15,13,12,17,11]
 let min=0;
-
+for(let i=0;i<input.length;i++){
+    if(min=0)
+        min=input[i]
+    if(input[i]<min)
+        min=input[i]}
+console.log(min)
